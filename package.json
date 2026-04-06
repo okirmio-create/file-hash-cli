@@ -4,11 +4,10 @@
   "description": "Calculate file hashes (MD5, SHA1, SHA256, SHA512) from the command line",
   "type": "module",
   "bin": {
-    "file-hash": "./dist/index.js"
+    "file-hash-cli": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsup",
-    "prepublishOnly": "npm run build"
+    "build": "tsup"
   },
   "keywords": [
     "hash",
@@ -22,18 +21,15 @@
   ],
   "author": "okirmio",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/okirmio-create/file-hash-cli"
-  },
   "dependencies": {
+    "chalk": "^5.4.1",
     "commander": "^13.1.0",
-    "chalk": "^5.4.1"
+    "fast-glob": "^3.3.2"
   },
   "devDependencies": {
+    "@types/node": "^22.12.0",
     "tsup": "^8.4.0",
-    "typescript": "^5.7.3",
-    "@types/node": "^22.12.0"
+    "typescript": "^5.7.3"
   },
   "engines": {
     "node": ">=18"
